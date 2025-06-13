@@ -1,0 +1,44 @@
+create database bloodb
+use bloodb
+
+create table doctor(
+doctor_id int primary key,
+doctor_name varchar(30),
+doctor_address varchar(50),
+d_ph varchar(10)
+);
+
+
+create table donor(
+donor_id int primary key,
+donor_name varchar(20),
+gender varchar(20),
+donor_address varchar(30),
+dob date,
+blweight int,
+phone_no varchar(10),
+doctor_id int,
+foreign key(doctor_id) references doctor on delete cascade on update cascade);
+
+
+create table bloodbank(
+b_bank_id int primary key,
+b_bank_name varchar(20),
+b_bank_address varchar(30),
+donor_id int,
+bl_id int,
+bl_type varchar(5),
+foreign key(donor_id) references donor(donor_id) on delete cascade on update cascade);
+
+create table patient(
+pat_id int primary key,
+pat_name varchar(20),
+pat_address varchar(30),
+pat_phoneno varchar(10),
+hosp_add varchar(30),
+b_bank_id int ,
+foreign key (b_bank_id) references bloodbank(b_bank_id) on delete cascade on update cascade);
+
+
+
+

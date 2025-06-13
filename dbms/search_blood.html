@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search for Blood</title>
+  <style>
+    body {
+      font-family: Arial;
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 50px;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px #ccc;
+    }
+    select, input[type=submit] {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      font-size: 16px;
+      width: 90%;
+    }
+    select {
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    input[type=submit] {
+      background-color: crimson;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: darkred;
+    }
+  </style>
+</head>
+<body>
+  <h2>Search for Blood</h2>
+  <form action="search_blood.php" method="POST">
+    <label for="blood_type">Select Blood Type:</label><br>
+    <select name="blood_type" id="blood_type" size="8" required>
+      <option value="A+">A+</option>
+      <option value="A-">A-</option>
+      <option value="B+">B+</option>
+      <option value="B-">B-</option>
+      <option value="AB+">AB+</option>
+      <option value="AB-">AB-</option>
+      <option value="O+">O+</option>
+      <option value="O-">O-</option>
+    </select><br>
+    <input type="submit" value="Search">
+  </form>
+</body>
+<br><br>
+<center>
+  <button onclick="window.location.href='index.html'" style="
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;">
+    Back to Home
+  </button>
+</center>
+
+</html>
