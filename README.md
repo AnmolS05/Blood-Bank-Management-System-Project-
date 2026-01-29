@@ -126,7 +126,8 @@ CREATE TABLE patient(
 
 ## 📸 Screenshot
 
-![Dashboard](./969cb2df-917b-4c5f-848f-8bbec624c68f.png)
+<img width="1915" height="918" alt="image" src="https://github.com/user-attachments/assets/26decf28-ccdf-43b5-81c6-3bd450b569b7" />
+
 
 ---
 
@@ -138,3 +139,4 @@ This project helped me understand:
 - Modular UI design for large-scale systems
 - Visual communication using background imagery and card-based layout
 - Integrating PHP with MySQL for dynamic data management
+
